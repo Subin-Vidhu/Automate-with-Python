@@ -6,7 +6,7 @@ data = f.read()
 f.close()
 print(data)
 
-# readline
+# readlines 
 f = open('C:/Users/Subin-PC/Documents/Flask Local Host to aira_aramis_ai.txt','r')
 
 lines = f.readlines()
@@ -25,14 +25,15 @@ while line:
 
 f.close()
 
-# import os.path
+# path
+import os.path
 
-# filename = "myfile.txt"
+filename = "C:/Users/Subin-PC/Documents/Flask Local Host to aira_aramis_ai.txt"
 
-# if os.path.isfile(filename):
-#     with open(filename, "r") as f:
-#         contents = f.read()
-#         print(contents)
-#     else:
-#         print("File does not exist.")
+if os.path.isfile(filename):
+    with open(filename, "r") as f:
+        contents = f.read()
+        print(contents)
+else:
+    print("File does not exist.")
 
